@@ -15,10 +15,10 @@ namespace ArifElastic
 
             #region Get Url Connection String
 
-            Console.WriteLine("***Kibana Dashboard http://172.24.244.20:5601 ");
-            Console.WriteLine("***Provide Log Post host URL (ex: http://172.24.244.20:9200/): ");
+            Console.WriteLine("***Kibana Dashboard http://kibanadashboardip:5601 ");
+            Console.WriteLine("***Provide Log Post host URL (ex: http://elasticip:9200/): ");
             //var host = Console.ReadLine();
-           var host = "http://172.24.244.20:9200/";
+           var host = "http://elasticip:9200/";
             host = host + (host.EndsWith("/", StringComparison.InvariantCulture) ? "" : "/");
 
             #endregion
