@@ -4,43 +4,43 @@ Demo for using .NET Core to perform a basic search query with Elasticsearch
 This project requires a running Elasticsearch instance.
 You can create a Docker container running Elasticsearch using the following:
 
-docker run -d --name es-1 -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:7.3.1
+<h3>docker run -d --name es-1 -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:7.3.1</h3>
 
-Or İnstall Cesntos 7
+<h3>Or İnstall Cesntos 7</h3>
 first install repo file in /etc/yum.repos.d/
 
-install Java
+<h3>install Java</h3>
  sudo yum install -y java-1.8.0-openjdk-devel
 
-Add Key
+<h3>Add Key</h3>
  sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 
-Install ElasticSearch
+<h3>Install ElasticSearch</h3>
 sudo yum install elasticsearch
 
 
-// Download and Install Etc folder, myproject yml files
+<h3>// Download and Install Etc folder, myproject yml files</h3>
 
-Start Service for ElasticSearch
+<h3>Start Service for ElasticSearch</h3>
 sudo systemctl start elasticsearch
 
-Create Symlink autostartup service
+<h3>Create Symlink autostartup service</h3>
 sudo systemctl enable elasticsearch
 
-Check elastic
+<h3>Check elastic</h3>
 curl -X GET 'http://localhost:9200'
 
-Install Kibana Dashboard
+<h3>Install Kibana Dashboard</h3>
 sudo yum install -y kibana
 
-Start sevice for kibana
+<h3>Start sevice for kibana</h3>
 sudo systemctl start kibana
 
-Create Symlink autostartup service
+<h3>Create Symlink autostartup service</h3>
 sudo systemctl enable kibana
 
-Disable local firewall
+<h3>Disable local firewall</h3>
 sudo systemctl stop firewalld
 sudo systemctl disable firewalld
 
-Send c# code log data ENJOY!!!
+<h3>Send c# code log data ENJOY!!!</h3>
