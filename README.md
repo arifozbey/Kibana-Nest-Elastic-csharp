@@ -1,3 +1,7 @@
+![image](https://user-images.githubusercontent.com/55440144/216551168-0d3dd747-aab6-4d10-827a-a6a0f5f19070.png)
+![image](https://user-images.githubusercontent.com/55440144/216551332-f3227bb0-a558-4a01-a9f9-2f09bc5dbdfe.png)
+
+
 # elasticsearch-dotnet-demo
 Demo for using .NET Core to perform a basic search query with Elasticsearch
 
